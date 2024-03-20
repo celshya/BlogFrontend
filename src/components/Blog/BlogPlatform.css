@@ -1,0 +1,145 @@
+.platformContainer {
+    text-align: center;
+}
+.header {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+.topBar {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    padding: 10px 20px; /* Add padding for spacing */
+   
+}
+
+.topBar button {
+    margin-left: 10px; /* Add space between buttons */
+    padding: 8px 12px; /* Add padding for button content */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+   
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+.topBar button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
+.header h1 {
+    margin-left: 25px;
+   
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.noPostAvailable {
+    text-align: center;
+}
+
+.noPostAvailable img {
+    width: 250px; /* Adjust the width of the dummy photo icon */
+    height: 250px; /* Adjust the height of the dummy photo icon */
+    margin-bottom: 20px;
+}
+.header p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Change to space-between to add space between sections */
+    align-items: flex-start;
+}
+
+.createBlogSection {
+    flex: 0.4; /* Change the flex value to make it smaller */
+    margin-right: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.createBlogSection h2 {
+    margin-bottom: 15px;
+}
+
+.createBlogSection input,
+.createBlogSection textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.createBlogSection textarea {
+    resize: vertical;
+}
+
+.createBlogSection button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.createBlogSection button:hover {
+    background-color: #2980b9;
+}
+
+.blogListSection {
+    flex: 0.6; /* Change the flex value to give more space to all blogs */
+    margin-left: 20px;
+    text-align: left;
+}
+
+.blogItem {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Added to horizontally center the element */
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blogItem h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.blogItem p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.blogItem button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.blogItem button:hover {
+    background-color: #c0392b;
+}
