@@ -25,9 +25,10 @@ function Login() {
 
     try {
       const response = await axios.post(`${API_BASE_URL}/auth/login`, formData);
-
+      console.log("here first")
       if (response.status === 200) {
         const data = await response.json();
+        console.log("here second")
         const token = data.token;
         console.log(token)
         localStorage.setItem("token", token); // Store token in localStorage
