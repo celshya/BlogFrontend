@@ -27,10 +27,15 @@ function Login() {
       const response = await axios.post(`${API_BASE_URL}/auth/login`, formData);
 
       if (response.status === 200) {
+        const data = await response.json();
+        const token = data.token;
+        console.log(token)
+        localStorage.setItem("token", token); // Store token in localStorage
         enqueueSnackbar('User logged in successfully', { variant: 'success' });
         // Redirect to homepage or dashboard
         // Example: window.location.href = '/';
         navigate('/');
+        return token;
       }
     } catch (error) {
       enqueueSnackbar('Error logging in. Please try again.', { variant: 'error' });
